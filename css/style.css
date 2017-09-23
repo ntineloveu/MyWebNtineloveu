@@ -1,0 +1,246 @@
+body {
+  background: #C8C8C8;
+}
+
+a {
+  cursor: pointer;
+  color: #FFFFFF !important;
+  text-decoration: none !important;
+}
+
+@font-face
+{
+  font-family: 'SuperspaceLight';
+	src: url('fonts/SuperspaceLight.eot');
+	src: url('fonts/SuperspaceLight.eot?#iefix') format('embedded-opentype'),
+		url('fonts/SuperspaceLight.woff') format('woff'),
+		url('fonts/SuperspaceLight.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.font-SuperspaceLight {
+  font-family: 'SuperspaceLight';
+}
+
+.font-size-8 { font-size: 8pt; }
+.font-size-10 { font-size: 10pt; }
+.font-size-12 { font-size: 12pt; }
+.font-size-14 { font-size: 14pt; }
+.font-size-16 { font-size: 16pt; }
+.font-size-18 { font-size: 18pt; }
+.font-size-20 { font-size: 20pt; }
+
+.text-right {text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+
+.header {
+  background: #6C6C6C;
+  height: 80px;
+}
+
+.header .logo {
+  padding-top: 7px;
+}
+
+.logo .logo-size {
+  width: 180px;
+}
+
+.header .menu{
+  padding-top: 30px;
+  padding-left: 60px;
+  height: 80px;
+  font-family: 'SuperspaceLight';
+}
+
+.nav__menu {
+  font-weight: bold;
+	display:inline-block;
+}
+
+.nav__menu a span {
+  padding-right: 5px;
+}
+
+.nav__menu a {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.nav__menu a:hover {
+  transition: 0.4s;
+  background: #F6B22E;
+}
+
+.header .menu-xs {
+  font-size: 20pt;
+  padding-top: 25px;
+}
+
+.nav__menu-xs {
+  font-family: 'SuperspaceLight';
+}
+
+.nav__menu-xs div {
+  transition: 0.4s;
+  font-weight: bold;
+  text-align: center;
+  background: #4D4D4D;
+  padding: 10px;
+  border-bottom: 2px solid #8C8C8C;
+}
+
+.nav__menu-xs a:hover div{
+  background: #F6B22E;
+}
+
+.nav__menu-xs a div span {
+  padding-right: 5px;
+}
+
+.menu-home {
+  background: #70A68F;
+}
+
+.menu-home a div{
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menu-home a:hover div {
+  transition: 0.4s;
+  background: #F6B22E;
+}
+
+.content {
+  padding: 15px;
+}
+
+.content .content-contact{
+  padding: 15px;
+  background: #EDEDED;
+}
+
+.content-contact .detail {
+  padding: 15px;
+  color: #252525 ;
+}
+
+.content-contact span {
+  display: block;
+}
+
+.content-contact i {
+  margin-right: 10px;
+  color: #7E7E7E;
+}
+
+.content-contact span img {
+  height: 18px;
+}
+
+.content-contact span a {
+  color: #252525 !important;
+}
+
+.content-contact span a:hover {
+  transition: 0.2s;
+  font-weight: bold;
+  color: #666262 !important;
+}
+
+.content-myprofile {
+  background: #FFFDFC;
+  margin: 15px 0;
+}
+
+.content-myprofile .section {
+  margin-bottom: 50px;
+}
+
+.section h4 .pic {
+  background: #293236;
+  border-radius: 360px;
+  margin-right: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.pic img {
+  height: 20px;
+}
+
+.section span {
+  margin: 0 25px;
+  display: block;
+}
+
+.section .pic-languaes {
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.content-myprofile .content-myprofile__picture {
+  background: #293236;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.content-myprofile .content-myprofile__detail {
+  background: #3B474D;
+  color: #FFFFFF;
+  padding-bottom: 15px;
+}
+
+.content-myprofile__detail .section .progress {
+  height:8px;
+}
+
+.content-myprofile__detail .section h4 {
+  font-weight: bold;
+}
+
+.content-myprofile .content-myprofile__detail2 {
+  padding-left: 50px;
+  padding-top: 35px;
+}
+
+.content-myprofile__detail2 .section h4 {
+  color: #293236;
+  font-weight: bold;
+}
+
+.profile-size {
+  height: 200px;
+  border-radius: 360px;
+}
+
+.footer {
+  height: 80px;
+  background: #939393;
+  position: absolute;
+  bottom: 0;
+}
+
+/* ios generate */
+
+.content-main {
+  /* font-family: 'SuperspaceLight'; */
+  padding: 15px;  
+}
+
+.input {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.output {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.inline {
+  display: block;  
+}
