@@ -118,6 +118,12 @@ a {
   padding: 15px;
 }
 
+.content .content-dashboard{
+  padding: 15px;
+  height: 100px;
+  background: #DDC018;
+}
+
 .content .content-contact{
   padding: 15px;
   background: #EDEDED;
@@ -225,11 +231,6 @@ a {
 }
 
 /* ios generate */
-
-.content-main {
-  /* font-family: 'SuperspaceLight'; */
-  padding: 15px;  
-}
 
 .input {
   padding-left: 50px;
