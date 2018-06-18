@@ -8,6 +8,14 @@ a {
   text-decoration: none !important;
 }
 
+input, textarea {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
 @font-face
 {
   font-family: 'SuperspaceLight';
@@ -118,13 +126,13 @@ a {
   padding: 15px;
 }
 
-.content .content-dashboard{
+.content .content-dashboard {
   padding: 15px;
   height: 100px;
   background: #DDC018;
 }
 
-.content .content-contact{
+.content .content-contact { 
   padding: 15px;
   background: #EDEDED;
 }

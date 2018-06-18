@@ -24,7 +24,7 @@
               <form>
                 <div class="form-group">
                   <label for="model-name">ModelName:</label>
-                  <textarea class="form-control" rows="5" id="model-name"></textarea>
+                  <textarea class="form-control" rows="5" id="model-name" placeholder='LabelModel'></textarea>
                 </div>
               </form>
             </div>
@@ -32,7 +32,8 @@
               <form>
                 <div class="form-group">
                   <label for="input">VariableName:</label>
-                  <textarea class="form-control" rows="5" id="input-text"></textarea>
+                  <textarea class="form-control" rows="5" id="input-text" placeholder='titleLabel
+detailLabel'></textarea>
                 </div>
               </form>
             </div>
@@ -46,7 +47,15 @@
                   <div class="text-right inline">
                     <button type="button" class="btn btn-primary btn-xs" id="button-copy-h">Copy</button>
                   </div> 
-                  <textarea class="form-control" rows="20" id="output-h-text"></textarea>
+                  <textarea class="form-control" rows="20" id="output-h-text" placeholder='#import <Foundation/Foundation.h>
+#import "BaseModel.h"
+                  
+@interface LabelModel : NSObject<BaseModel>
+                  
+- (NSString *)titleLabelText;
+- (NSString *)detailLabelText;
+                  
+@end'></textarea>
                 </div>
               </form>
             </div>
@@ -57,7 +66,35 @@
                   <div class="text-right">
                     <button type="button" class="btn btn-primary btn-xs" id="button-copy-m">Copy</button>
                   </div> 
-                  <textarea class="form-control" rows="20" id="output-m-text"></textarea>
+                  <textarea class="form-control" rows="20" id="output-m-text" placeholder='#import "LabelModel.h"
+
+@interface LabelModel()
+
+@property (nonatomic, strong) NSString *titleLabel;
+@property (nonatomic, strong) NSString *detailLabel;
+
+@end
+
+@implementation LabelModel
+
+- (instancetype)initFromDictionary:(NSDictionary *)dict {
+	self = [super init];
+	if (self) {
+		self.titleLabel = dict[@"titleLabel"];
+		self.detailLabel = dict[@"detailLabel"];
+	}
+	return self;
+}
+
+- (NSString *)titleLabelText {
+	return self.titleLabel;
+}
+
+- (NSString *)detailLabelText {
+	return self.detailLabel;
+}
+
+@end'></textarea>
                 </div>
               </form>
             </div>

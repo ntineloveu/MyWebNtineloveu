@@ -14,7 +14,6 @@
         <div class="col-xs-4">
           <a href="/tine/auto_gen.php">
             <div class="content-dashboard">
-              
                 <span>Auto Gen</span>
             </div>
           </a>
