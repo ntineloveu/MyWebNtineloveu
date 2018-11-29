@@ -21,8 +21,9 @@ $(document).ready(function() {
     var length = textSplit.length;
 
     if (text != "" && modelname != "") {
-      outputH += "#import <Foundation/Foundation.h>\n#import \"BaseModel.h\"\n\n";    
+      outputH += "#import <Foundation/Foundation.h>\n#import \"BaseModel.h\"\n\n";
       outputM += "#import \""+modelname+".h\"\n\n";
+      outputH += "#import \"Utils.h\"\n\n";    
   
       outputH += "@interface "+modelname+" : NSObject<BaseModel>\n\n";
       outputM += "@interface "+modelname+"()\n\n";
