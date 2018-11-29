@@ -22,7 +22,7 @@ $(document).ready(function() {
 
     if (text != "" && modelname != "") {
       outputH += "#import <Foundation/Foundation.h>\n#import \"BaseModel.h\"\n\n";
-      outputM += "#import \""+modelname+".h\"\n\n";
+      outputM += "#import \""+modelname+".h\"\n";
       outputM += "#import \"Utils.h\"\n\n";    
   
       outputH += "@interface "+modelname+" : NSObject<BaseModel>\n\n";
@@ -44,7 +44,7 @@ $(document).ready(function() {
       
       for (i = 0; i < length; i++) { 
         if (textSplit[i] != "") {        
-          outputM += "\t\tself."+textSplit[i]+" = dict[@\""+textSplit[i]+"\"];\n";
+          outputM += "\t\tself."+textSplit[i]+" = IF_EMPTY(dict[@\""+textSplit[i]+"\"], @\"\");\n";
         }
       }
   
