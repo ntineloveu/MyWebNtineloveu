@@ -16,6 +16,9 @@
             <a href="/tine/my_profile.php">My Profile</a>
           </div>
           <div class="nav__menu font-size-14">
+            <a href="/tine/auto_gen.php">Auto Gen</a>
+          </div>
+          <div class="nav__menu font-size-14">
             <a href="/tine/contact_me.php">Contact Me</a>
           </div>
         </div>
@@ -43,6 +46,9 @@
   </a>
   <a href="/tine/my_profile.php">
     <div class="col-xs-12">My Profile</div>
+  </a>
+  <a href="/tine/auto_gen.php">
+    <div class="col-xs-12">Auto Gen</div>
   </a>
   <a href="/tine/contact_me.php">
     <div class="col-xs-12">Contact Me</div>
